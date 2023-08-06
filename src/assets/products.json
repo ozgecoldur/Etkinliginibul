@@ -1,0 +1,52 @@
+[
+    {
+      "id":1,
+      "name": "GÜLŞEN",
+      "location": "Harbiye",
+      "price": "100.00 TL",
+      "imageSrc": "assets/images/gulsen.jpg",
+      "category":"konser",
+      "tarih": "2023-02-02"
+    },
+      {
+      "id":2,
+        "name": "GÜLŞEN",
+        "location": "Harbiye",
+        "price": "100.00 TL",
+        "imageSrc": "assets/images/gulsen.jpg",
+        "category":"stand-up",
+        "tarih": "2023-02-02"
+      },
+      {
+      "id":3,
+
+        "name": "GÜLŞEN",
+        "location": "Harbiye",
+        "price": "100.00 TL",
+        "imageSrc": "assets/images/gulsen.jpg",
+        "category":"festival",
+        "tarih": "2023-02-02"
+      },
+      {
+      "id":5,
+        "name": "GÜLŞEN",
+        "location": "Harbiye",
+        "price": "100.00 TL",
+        "imageSrc": "assets/images/gulsen.jpg",
+        "category":"konser",
+        "tarih": "2023-02-02"
+      },
+      {
+      "id":6,
+
+        "name": "GÜLŞEN",
+        "location": "Harbiye",
+        "price": "100.00 TL",
+        "imageSrc": "assets/images/gulsen.jpg",
+        "category":"tiyatro",
+        "tarih": "2023-02-02"
+      }
+    
+    
+]
+  

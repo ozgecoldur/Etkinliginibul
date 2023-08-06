@@ -1,0 +1,53 @@
+
+
+#feature {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add space between the boxes */
+  }
+  
+  #feature .fe-box {
+    width: 15%;
+    text-align: center;
+    padding: 15px 15px;
+    padding-top: 5px;
+    box-shadow: 2px 2px 3px rgba(162, 15, 93, 0.3);
+    border: 10px ;
+    border-radius: 40px;
+    margin-bottom: 2px; /* Add spacing between the boxes (bottom margin) */
+    display: flex; /* Use flexbox to arrange image and text side by side */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  #feature .fe-box img {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  
+  #feature .fe-box h6 {
+    padding: 4px 4px 4px 4px;
+    line-height: 1;
+    border-radius: 4px;
+    color: purple;
+    font-weight: 700;
+    font-size: 35;
+  }
+  
+  .fe-box a {
+    display: block;
+    text-decoration: none;
+    border-bottom: none;
+  }
+  
+  #feature .fe-box:nth-child(2) h6 {
+    color: purple;
+  }
+  #feature .fe-box:nth-child(3) h6 {
+    color: purple;
+  }
+  #feature .fe-box:nth-child(4) h6 {
+    color: purple;
+  }
+  

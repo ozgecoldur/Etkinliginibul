@@ -1,0 +1,71 @@
+//Header Start
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 110px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 100px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar a:hover,
+#navbar li a.active{
+    color: purple;
+}
+#navbar li .active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: purple;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #header {
+        padding: 20px 100px;
+    }
+}
+/* Akıllı telefonlar için (480px - 767px) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #header {
+        padding: 15px 50px;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #navbar li {
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 479px) {
+    #header {
+        padding: 15px 30px;
+    }
+}
+
+//Header End

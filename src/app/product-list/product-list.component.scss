@@ -1,0 +1,169 @@
+#product1{
+    text-align: center;
+  }
+  #product1 .pro-container{
+    display: flex;
+    // justify-content: space-between;
+    padding-top: 0px;
+    flex-wrap: wrap;
+    padding: 20 150;
+  }
+  #product1 .pro{
+    width: 23%;
+    min-width: 400px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0 ;
+    transition: 0.2s ease;
+    position: relative;
+    padding: 20 150;
+  
+  }
+
+
+  
+  #product1 .pro:hover{
+    box-shadow: 10px 10px 10px rgba(162, 15, 93, 0.3) ;
+  }
+  #product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  #product1 .pro .des{
+    text-align: left;
+    padding: 30px 0;
+    
+  }
+  #product1 .pro .des h4{
+    padding-left: 10px;
+    color:black;
+    font-weight: 600;
+  }
+  #product1 .pro .des h5{
+    padding-top: 15px;
+    color:black;
+    font-size: 14; 
+    font-weight: 600;
+    padding-left: 10px;
+  
+  }
+  
+  #product1 .price-box {
+    padding-top: 20px;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: left;
+    color: purple;
+    width: 370px;
+    height: 50px;
+    font-size:22px;
+    font-weight: 700;   
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+     
+  }
+  
+  #product1 .price-box i {
+  font-size: 20px;
+  color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:purple;
+  margin-left: 195px;
+  }
+  
+  
+  
+  #feature {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add space between the boxes */
+  }
+  
+  #feature .fe-box {
+    width: 15%;
+    text-align: center;
+    padding: 15px 15px;
+    padding-top: 5px;
+    box-shadow: 2px 2px 3px rgba(162, 15, 93, 0.3);
+    border: 10px ;
+    border-radius: 40px;
+    margin-bottom: 2px; /* Add spacing between the boxes (bottom margin) */
+    display: flex; /* Use flexbox to arrange image and text side by side */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  #feature .fe-box img {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  
+  #feature .fe-box h6 {
+    padding: 4px 4px 4px 4px;
+    line-height: 1;
+    border-radius: 4px;
+    color: purple;
+    font-weight: 700;
+    font-size: 35;
+  }
+  
+  .fe-box a {
+    display: block;
+    text-decoration: none;
+    border-bottom: none;
+  }
+  
+  #feature .fe-box:nth-child(2) h6 {
+    color: purple;
+  }
+  #feature .fe-box:nth-child(3) h6 {
+    color: purple;
+  }
+  #feature .fe-box:nth-child(4) h6 {
+    color: purple;
+  }
+  
+
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+ul li a{
+    height: 20rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+
+
+

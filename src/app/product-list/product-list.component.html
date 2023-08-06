@@ -1,0 +1,36 @@
+<section id="feature" class="section-p1">
+    <div class="fe-box" (click)="filterByCategory('konser')">
+      <!-- KONSER bağlantısı eklendi -->
+      <img src="https://cdn.bubilet.com.tr/files/Etiket/konser-69529.png" alt="KONSER" />
+      <h6>KONSER</h6>
+    </div>
+    <div class="fe-box" (click)="filterByCategory('tiyatro')">
+      <!-- TİYATRO bağlantısı eklendi -->
+      <img src="https://cdn.bubilet.com.tr/files/Etiket/tiyatro-69756.png" alt="TİYATRO" />
+      <h6>TİYATRO</h6>
+    </div>
+    <div class="fe-box" (click)="filterByCategory('stand-up')">
+      <!-- SİNEMA bağlantısı eklendi -->
+      <img src="https://cdn.bubilet.com.tr/files/Etiket/stand-up-36380.PNG" alt="SİNEMA" />
+      <h6>STAND-UP</h6>
+    </div>
+    <div class="fe-box" (click)="filterByCategory('festival')">
+      <!-- FESTİVAL bağlantısı eklendi -->
+      <img src="https://cdn.bubilet.com.tr/files/Etiket/festival-63840.png" alt="FESTİVAL" />
+      <h6>FESTİVAL</h6>
+    </div>
+  </section>
+
+  <section id="product1" class="section-p1">
+    <div class="pro-container">
+      <div class="pro" *ngFor="let product of filteredProducts">
+        <img [src]="product.imageSrc" alt="">
+        <div class="des">
+          <h4>{{ product.name }}</h4>
+          <h5>{{ product.location }}</h5>
+          <div class="price-box">{{ product.price }} <i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
