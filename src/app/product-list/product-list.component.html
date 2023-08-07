@@ -21,9 +21,12 @@
     </div>
   </section>
 
+
+
   <section id="product1" class="section-p1">
     <div class="pro-container">
-      <div class="pro" *ngFor="let product of filteredProducts">
+      <div class="pro" *ngFor="let product of filteredProducts"   (click)="onCardClick(product.id)">
+        <!-- Add routerLink to navigate to the product detail page with the product ID -->
         <img [src]="product.imageSrc" alt="">
         <div class="des">
           <h4>{{ product.name }}</h4>
@@ -33,4 +36,5 @@
       </div>
     </div>
   </section>
+
   

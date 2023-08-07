@@ -10,7 +10,8 @@ import { CategoryComponent } from './category/category.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { EventDetailComponent } from './event-detail/event-detail.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EventDetailComponent } from './event-detail/event-detail.component';
     CategoryComponent,
     FooterComponent,
     ProductListComponent,
-    EventDetailComponent,
+    ProductDetailComponent,
+  
 
   ],
   imports: [

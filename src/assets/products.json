@@ -1,17 +1,18 @@
 [
     {
       "id":1,
-      "name": "GÜLŞEN",
-      "location": "Harbiye",
-      "price": "100.00 TL",
-      "imageSrc": "assets/images/gulsen.jpg",
+      "name": "Ajda Pekkan",
+      "location": "Harbiye Cemil Topuzlu Açıkhava Tiyatrosu",
+      "price": "945.00 TL",
+      "imageSrc": "assets/images/ajdapekkan.jpg",
       "category":"konser",
-      "tarih": "2023-02-02"
+      "tarih": "2023-02-09"
+      
     },
       {
       "id":2,
         "name": "GÜLŞEN",
-        "location": "Harbiye",
+        "location": "Harbiye Cemil Topuzlu Açıkhava Tiyatrosu",
         "price": "100.00 TL",
         "imageSrc": "assets/images/gulsen.jpg",
         "category":"stand-up",

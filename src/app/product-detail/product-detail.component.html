@@ -1,0 +1,12 @@
+<div *ngIf="product" class="product-detail">
+    <img [src]="product.imageSrc" alt="" />
+    <div class="product-info">
+      <h2>{{ product.name }}</h2>
+      <p>Location: {{ product.location }}</p>
+      <p>Price: {{ product.price }}</p>
+      <p>Category: {{ product.category }}</p>
+      <p>Date: {{ product.tarih }}</p>
+    </div>
+  </div>
+  
+ 

@@ -27,12 +27,12 @@ export class ProductListComponent implements OnInit {
       }
     );
   }
-   filterByCategory(category: string) {
+
+  filterByCategory(category: string) {
     this.filteredProducts = this.products.filter((product) => product.category === category);
   }
 
   onCardClick(eventId: number) {
-    this.router.navigate(['/event-detail', eventId]);
-  }
-
+    this.router.navigate(['/product-detail', eventId]); // Yeni ürün detay sayfası yoluna yönlendir
+  }  
 }
