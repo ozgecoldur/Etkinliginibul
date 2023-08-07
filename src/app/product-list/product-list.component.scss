@@ -2,171 +2,188 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Spartan',sans-serif;
+  font-family: 'Spartan', sans-serif;
 }
 
 .section-p1 {
   padding: 40px 80px;
 }
+
 .section-m1 {
   margin: 40px 0;
 }
 
-body{
+body {
   width: 100%;
 }
 
+#product1 {
+  text-align: center;
 
-#product1{
-    text-align: center;
-    
-  }
-  #product1 .pro-container{
+  .pro-container {
     display: flex;
     // justify-content: space-between;
     padding-top: 0px;
     flex-wrap: wrap;
     padding: 20 150;
-    
   }
-  #product1 .pro{
+
+  .pro {
     width: 25%;
     min-width: 400px;
-    padding: 10px 12px;
+    padding: 0px 0dvb;
     border: 1px solid #cce7d0;
     border-radius: 25px;
     cursor: pointer;
-    margin: 15px 25px ;
+    margin: 15px 25px;
     transition: 0.2s ease;
     position: relative;
     padding: 20 150;
 
-  }
+    &:hover {
+      box-shadow: 10px 10px 10px rgba(162, 15, 93, 0.3);
+    }
+  
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+}
+    .des {
+      text-align: left;
+      padding: 30px 0;
 
+      h4 {
+        padding-left: 10px;
+        color: black;
+        font-weight: 600;
+        height: 50px; /* Sabit yükseklik ayarlayın */
+        padding-left: 20px;
 
-  #product1 .pro:hover{
-    box-shadow: 10px 10px 10px rgba(162, 15, 93, 0.3) ;
-  }
-  #product1 .pro img{
-    width: 100%;
-    border-radius: 20px;
-  }
-  #product1 .pro .des{
-    text-align: left;
-    padding: 30px 0;
+      }
+
+      h5 {
+        padding-top: 15px;
+        color: black;
+        font-size: 10;
+        font-weight: 500;
+        padding-left: 20px;
+        height: 70px; /* Sabit yükseklik ayarlayın */
+      }
+      h6 {
+        padding-top: 15px;
+        color: black;
+        font-size: 10;
+        font-weight: 400;
+        padding-left: 10px;
+        height: 40px; /* Sabit yükseklik ayarlayın */
+        padding-left: 20px;
+
+      }
     
+
+    .price-box {
+      padding-top: 20px;
+      background-color: white;
+      margin-top: 15px;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: left;
+      color: purple;
+      width: 370px;
+      height: 50px;
+      font-size: 18px;
+      font-weight: 700;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      i {
+        font-size: 20px;
+        color: white;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: purple;
+        margin-left: 195px;
+      }
+    }
   }
-  #product1 .pro .des h4{
-    padding-left: 10px;
-    color:black;
-    font-weight: 600;
-  }
-  #product1 .pro .des h5{
-    padding-top: 15px;
-    color:black;
-    font-size: 14; 
-    font-weight: 400;
-    padding-left: 10px;
-  
-  }
-  
-  #product1 .price-box {
-    padding-top: 20px;
-    background-color: white;
-    margin-top: 15px;
-    border-radius: 15px;
-    padding: 10px;
-    text-align: left;
-    color: purple;
-    width: 370px;
-    height: 50px;
-    font-size:20px;
-    font-weight: 700;   
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  #product1 .price-box i {
-  font-size: 20px;
-  color: white;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+}
+
+#feature {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color:purple;
-  margin-left: 195px;
-  
-  }
-  
-  
-  
-  #feature {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Add space between the boxes */
-    cursor: pointer;
-  }
-  
-  #feature .fe-box {
+  flex-wrap: wrap;
+  justify-content: space-between; /* Add space between the boxes */
+  cursor: pointer;
+
+  .fe-box {
     width: 15%;
     text-align: center;
     padding: 15px 15px;
     padding-top: 5px;
     box-shadow: 2px 2px 3px rgba(162, 15, 93, 0.3);
-    border: 10px ;
+    border: 10px;
     border-radius: 40px;
     margin-bottom: 2px; /* Add spacing between the boxes (bottom margin) */
     display: flex; /* Use flexbox to arrange image and text side by side */
     flex-direction: column; /* Stack image and text vertically */
     align-items: center; /* Center items horizontally */
-  }
-  
-  #feature .fe-box img {
-    width: 60%;
-    margin-bottom: 10px;
-  }
-  
-  #feature .fe-box h6 {
-    padding: 4px 4px 4px 4px;
-    line-height: 1;
-    border-radius: 4px;
-    color: purple;
-    font-weight: 700;
-    font-size: 35;
-  }
-  
-  .fe-box a {
-    display: block;
-    text-decoration: none;
-    border-bottom: none;
-  }
-  
-  #feature .fe-box:nth-child(2) h6 {
-    color: purple;
-  }
-  #feature .fe-box:nth-child(3) h6 {
-    color: purple;
-  }
-  #feature .fe-box:nth-child(4) h6 {
-    color: purple;
-  }
-  
 
+    img {
+      width: 60%;
+      margin-bottom: 10px;
+    }
 
+    h6 {
+      padding: 4px 4px 4px 4px;
+      line-height: 1;
+      border-radius: 4px;
+      color: purple;
+      font-weight: 700;
+      font-size: 35;
+    }
 
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
+    a {
+      display: block;
+      text-decoration: none;
+      border-bottom: none;
+    }
+
+    &:nth-child(2) {
+      h6 {
+        color: purple;
+      }
+    }
+
+    &:nth-child(3) {
+      h6 {
+        color: purple;
+      }
+    }
+
+    &:nth-child(4) {
+      h6 {
+        color: purple;
+      }
+    }
+  }
 }
-ul li a{
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+
+  li a {
     height: 20rem;
     width: 20rem;
     border: 1px solid whitesmoke;
@@ -176,14 +193,10 @@ ul li a{
     flex-direction: column;
     overflow: hidden;
     color: #e72929;
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
 }
-
-li a:hover{
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-
-
-
-

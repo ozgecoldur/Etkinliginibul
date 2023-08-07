@@ -1,12 +1,44 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <div *ngIf="product" class="product-detail">
-    <img [src]="product.imageSrc" alt="" />
-    <div class="product-info">
+  <img [src]="product.imageSrc" alt="" />
+  <div class="card">
+  <div class="card-content">
+
+  <div class="product-info">
       <h2>{{ product.name }}</h2>
-      <p>Location: {{ product.location }}</p>
-      <p>Price: {{ product.price }}</p>
-      <p>Category: {{ product.category }}</p>
-      <p>Date: {{ product.tarih }}</p>
+      <div class="category">
+        <i class="fa-solid fa-tag" style="color: #800080;"></i>
+        <p style="margin: 0; margin-left: 5px;">{{ product.category }}</p>
+      </div>
+      <div class="event-box">
+        <p class="event-title">Ekinlik Detayı:</p>
+        <p class="event-detail">{{ product.etkinlikdetayi }}</p>
+      </div>
+      <div class="location">
+        <i class="fa-solid fa-location-dot" style="color: #800080;"></i>
+        <p style="margin: 0; margin-left: 5px;">{{product.city}} /  {{ product.location }}</p>
+      </div>
+      <div class="price">
+        <i class="fa-solid fa-ticket fa-flip-vertical" style="color: #800080;"></i>
+        <p style="margin: 0; margin-left: 5px;">{{ product.price }}</p>
+      </div>
+
+      <div class="date">
+        <i class="fa-solid fa-calendar-days" style="color: #800080;"></i>
+        <p style="margin: 0; margin-left: 5px;">{{ product.tarih }} / {{product.saat}}</p>
+      </div>
+   
+  
+    <div class= buy>
+      <button class="favorite-button">
+        <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+        Favorilere Ekle</button>
+
+      <button class="cart-button">
+        <i class="fa-solid fa-basket-shopping" style="color: #ffffff;"></i>
+        Sepete Ekle</button>
     </div>
   </div>
-  
- 
+</div>
+</div>

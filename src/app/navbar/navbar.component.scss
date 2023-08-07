@@ -1,0 +1,70 @@
+
+
+//Navbar
+// Navbar
+.navbar {
+    background-color: white;
+    margin: 0px;
+  
+    /* Navbar yazı rengini ve boyutunu ayarla */
+    &-brand {
+      font-size: 50px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  
+    /* Form elemanlarının boyutlarını ve stillerini düzenle */
+    .form-control1 {
+      height: 70px;
+      padding: 6px 14px;
+      border: 0.1px solid grey;
+      border-radius: 40px;
+      width: 900px;
+      margin-left: 150px;
+      font-size: 20px;
+      color: purple;
+      outline: none;
+      font-weight: 550;
+      position: relative; /* position: absolute; yerine position: relative; kullanın */
+  
+      &::placeholder {
+        color: grey; /* Dilediğiniz renk */
+      }
+    }
+  
+    .search-box {
+      input[type="search"]::-webkit-search-cancel-button {
+        display: none;
+      }
+    }
+  
+    /* İkon için stil tanımlamaları */
+    .search-icon {
+      font-size: 24px;
+      color: purple;
+      position: relative;
+      margin-left: -50px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  
+    .dropdown {
+      height: 70px;
+      padding: 6px 12px;
+      border: 0.1px solid grey;
+      border-radius: 40px;
+      width: 300px;
+      margin-left: 50px;
+      font-size: 20px;
+      color: purple;
+      outline: none;
+      font-weight: 550;
+      cursor: pointer;
+      position: relative; /* position: absolute; yerine position: relative; kullanın */
+  
+      option {
+        font-weight: 500;
+      }
+    }
+  }
+  

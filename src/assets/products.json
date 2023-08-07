@@ -1,53 +1,181 @@
 [
     {
       "id":1,
-      "name": "Ajda Pekkan",
+      "name": "Ajda Pekkan ",
       "location": "Harbiye Cemil Topuzlu Açıkhava Tiyatrosu",
       "price": "945.00 TL",
       "imageSrc": "assets/images/ajdapekkan.jpg",
-      "category":"konser",
-      "tarih": "2023-02-09"
+      "category":"Konser",
+      "tarih": "9 Ağustos 2023",
+      "etkinlikdetayi": "POP MÜZİĞİN SÜPER STAR’I AJDA PEKKAN 9 AĞUSTOS’TA HARBİYE’DE! ",
+      "saat": "20.00",
+      "city":"İstanbul"
       
     },
       {
       "id":2,
-        "name": "GÜLŞEN",
-        "location": "Harbiye Cemil Topuzlu Açıkhava Tiyatrosu",
-        "price": "100.00 TL",
-        "imageSrc": "assets/images/gulsen.jpg",
-        "category":"stand-up",
-        "tarih": "2023-02-02"
+        "name": "Semicenk",
+        "location": "Turkcell Vadi",
+        "price": "430.00 TL",
+        "imageSrc": "assets/images/semicenk.jpeg",
+        "category":"Konser",
+        "tarih": "3 Eylül 2023",
+        "etkinlikdetayi": "Unutmak Öyle Kolay mı Sandın, Herkes Gibisin, Masal Gibi şarkılarıyla ismini duyuran ve kendine has tarzıyla müziğe yeni bir soluk kazandıran Semicenk sizlerle buluşmaya geliyor.",
+        "saat": "22.00",
+        "city":"İstanbul"
+
       },
       {
       "id":3,
 
-        "name": "GÜLŞEN",
-        "location": "Harbiye",
-        "price": "100.00 TL",
-        "imageSrc": "assets/images/gulsen.jpg",
-        "category":"festival",
-        "tarih": "2023-02-02"
-      },
-      {
-      "id":5,
-        "name": "GÜLŞEN",
-        "location": "Harbiye",
-        "price": "100.00 TL",
-        "imageSrc": "assets/images/gulsen.jpg",
-        "category":"konser",
-        "tarih": "2023-02-02"
-      },
-      {
-      "id":6,
+        "name": "Yıldız Tilbe Konseri",
+        "location": "YBY Woods Yaşam ve Etkinlik Alanı - Kemerburgaz Kent Ormanı",
+        "price": "400.00 TL",
+        "imageSrc": "assets/images/yildiz.png",
+        "category":"Konser",
+        "tarih": "18 Ağustos 2023",
+        "etkinlikdetayi": "Şarkıları ile dillerden düşmeyen Yıldız Tilbe, dinleyicileriyle buluşmaya devam ediyor. ",
+        "saat": "21.00",
+        "city":"İstanbul"
 
-        "name": "GÜLŞEN",
-        "location": "Harbiye",
-        "price": "100.00 TL",
-        "imageSrc": "assets/images/gulsen.jpg",
-        "category":"tiyatro",
-        "tarih": "2023-02-02"
-      }
+      },
+      {
+      "id":4,
+        "name": "Zeynep Bastık Konseri",
+        "location": "Jolly Joker Ankara",
+        "price": "350.00 TL",
+        "imageSrc": "assets/images/zeynep.jpg",
+        "category":"Konser",
+        "tarih": "25 Ağustos 2023",
+        "etkinlikdetayi": " Çeşitli sanatçıların vokalistliğini yaparak müzik hayatına devam eden Bastık;  Ezhel'in Felaket adlı şarkısına yaptığı cover ile hayran kitlesini oluşturan sanatçı; hit şarkılarıyla dinleyicisiyle buluşmaya devam ediyor!",
+        "saat": "20.00",
+        "city":"Ankara"
+
+      },
+      {
+        "id":5,
+        "name": "Melike Şahin Konseri",
+        "location": "Kültürpark Çim Konserleri Alanı",
+        "price": "250.00 TL",
+        "imageSrc": "assets/images/melike.png",
+        "category":"Konser",
+        "tarih": "5 Eylül 2023",
+        "etkinlikdetayi": "Melike Şahin, Atlantis Yapım organizasyonu ile Harbiye Açıkhava'da sevenleriyle buluşuyor!",
+        "saat": "21.00",
+        "city":"İzmir"
+
+      },
+      {
+        "id":6,
+        "name": "Sertab Erener Konseri",
+        "location": "IF Performance Hall",
+        "price": "400.00 TL",
+        "imageSrc": "assets/images/sertab.png",
+        "category":"Konser",
+        "tarih": "12 Ağustos 2023",
+        "etkinlikdetayi": "Türk müziğinin yıldız sanatçısı Sertab Erener, geçmişten günümüze sevilen şarkılarını dinleyicisiyle buluşturuyor.",
+        "saat": "21.00",
+        "city":"Ankara"
+      },
     
-    
+
+
+      {
+        "id":1,
+        "name": "Ajda Pekkan ",
+        "location": "Harbiye Cemil Topuzlu Açıkhava Tiyatrosu",
+        "price": "945.00 TL",
+        "imageSrc": "assets/images/ajdapekkan.jpg",
+        "category":"Tiyatro",
+        "tarih": "9 Ağustos 2023",
+        "etkinlikdetayi": "POP MÜZİĞİN SÜPER STAR’I AJDA PEKKAN 9 AĞUSTOS’TA HARBİYE’DE! ",
+        "saat": "20.00",
+        "city":"İstanbul"
+        
+      },
+        {
+        "id":2,
+          "name": "Semicenk",
+          "location": "Turkcell Vadi",
+          "price": "430.00 TL",
+          "imageSrc": "assets/images/semicenk.jpeg",
+          "category":"Tiyatro",
+          "tarih": "3 Eylül 2023",
+          "etkinlikdetayi": "Unutmak Öyle Kolay mı Sandın, Herkes Gibisin, Masal Gibi şarkılarıyla ismini duyuran ve kendine has tarzıyla müziğe yeni bir soluk kazandıran Semicenk sizlerle buluşmaya geliyor.",
+          "saat": "22.00",
+          "city":"İstanbul"
+  
+        },
+        {
+        "id":3,
+  
+          "name": "Yıldız Tilbe Konseri",
+          "location": "YBY Woods Yaşam ve Etkinlik Alanı - Kemerburgaz Kent Ormanı",
+          "price": "400.00 TL",
+          "imageSrc": "assets/images/yildiz.png",
+          "category":"Tiyatro",
+          "tarih": "18 Ağustos 2023",
+          "etkinlikdetayi": "Şarkıları ile dillerden düşmeyen Yıldız Tilbe, dinleyicileriyle buluşmaya devam ediyor. ",
+          "saat": "21.00",
+          "city":"İstanbul"
+  
+        },
+        {
+        "id":4,
+          "name": "Zeynep Bastık Konseri",
+          "location": "Jolly Joker Ankara",
+          "price": "350.00 TL",
+          "imageSrc": "assets/images/zeynep.jpg",
+          "category":"Tiyatro",
+          "tarih": "25 Ağustos 2023",
+          "etkinlikdetayi": " Çeşitli sanatçıların vokalistliğini yaparak müzik hayatına devam eden Bastık;  Ezhel'in Felaket adlı şarkısına yaptığı cover ile hayran kitlesini oluşturan sanatçı; hit şarkılarıyla dinleyicisiyle buluşmaya devam ediyor!",
+          "saat": "20.00",
+          "city":"Ankara"
+  
+        },
+        {
+          "id":5,
+          "name": "Melike Şahin Konseri",
+          "location": "Kültürpark Çim Konserleri Alanı",
+          "price": "250.00 TL",
+          "imageSrc": "assets/images/melike.png",
+          "category":"Tiyatro",
+          "tarih": "5 Eylül 2023",
+          "etkinlikdetayi": "Melike Şahin, Atlantis Yapım organizasyonu ile Harbiye Açıkhava'da sevenleriyle buluşuyor!",
+          "saat": "21.00",
+          "city":"İzmir"
+  
+        },
+        {
+          "id":6,
+          "name": "Sertab Erener Konseri",
+          "location": "IF Performance Hall",
+          "price": "400.00 TL",
+          "imageSrc": "assets/images/sertab.png",
+          "category":"Tiyatro",
+          "tarih": "12 Ağustos 2023",
+          "etkinlikdetayi": "Türk müziğinin yıldız sanatçısı Sertab Erener, geçmişten günümüze sevilen şarkılarını dinleyicisiyle buluşturuyor.",
+          "saat": "21.00",
+          "city":"Ankara"
+        },
+      
+
+
+
+
+
+      {
+        "id":2,
+          "name": "Moto Fest On The Road",
+          "location": "Hayal Kahvesi Aqua Florya",
+          "price": "100.00 TL",
+          "imageSrc": "assets/images/MotoFest.jpeg",
+          "category":"Festival",
+          "tarih": "2023-10-03",
+          "etkinlikdetayi": "Rain Dogs KK Motosiklet Kulübü önce YOLA sonrasında EĞLENCEYE çağırıyor!         Moto Fest On The Road 2023",
+          "saat": "22.00",
+          "city":"Ankara"
+  
+        }
 ]
   

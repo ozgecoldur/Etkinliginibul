@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     FooterComponent,
     ProductListComponent,
     ProductDetailComponent,
+    NavbarComponent,
   
 
   ],
