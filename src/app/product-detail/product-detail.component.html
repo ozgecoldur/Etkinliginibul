@@ -3,7 +3,6 @@
 <div *ngIf="product" class="product-detail">
   <img [src]="product.imageSrc" alt="" />
   <div class="card">
-  <div class="card-content">
 
   <div class="product-info">
       <h2>{{ product.name }}</h2>
@@ -26,10 +25,8 @@
 
       <div class="date">
         <i class="fa-solid fa-calendar-days" style="color: #800080;"></i>
-        <p style="margin: 0; margin-left: 5px;">{{ product.tarih }} / {{product.saat}}</p>
+        <p style="margin: 0; margin-left: 5px;"> {{ formatDateTimeTurkish(product.date) }} </p>
       </div>
-   
-  
     <div class= buy>
       <button class="favorite-button">
         <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
@@ -39,6 +36,6 @@
         <i class="fa-solid fa-basket-shopping" style="color: #ffffff;"></i>
         Sepete Ekle</button>
     </div>
-  </div>
+
 </div>
 </div>

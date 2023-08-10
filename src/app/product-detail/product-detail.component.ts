@@ -15,6 +15,8 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit() {
     const productId = this.route.snapshot.paramMap.get('id');
     this.getProductDetail(productId);
+
+
   }
 
   getProductDetail(productId: string) {
@@ -27,7 +29,23 @@ export class ProductDetailComponent implements OnInit {
       }
     );
   }
-  
+
+
+  formatDateTimeTurkish(dateTime: string): string {
+    const eventDateTime = new Date(dateTime);
+    const options: Intl.DateTimeFormatOptions = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: false
+    };
+    return eventDateTime.toLocaleDateString('tr-TR', options);
+  }
 }
+
+
+  
   
 

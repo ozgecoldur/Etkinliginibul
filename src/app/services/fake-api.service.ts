@@ -7,6 +7,13 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class FakeApiService {
+
+  getEvents(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl).pipe(
+      map((response: any) => response)
+    );
+  }
+  
   private apiUrl = 'assets/products.json';
 
   constructor(private http: HttpClient) { }
@@ -17,22 +24,6 @@ export class FakeApiService {
     );
   }
 
-  // getEventById(eventId: number): Observable<any> {
-  //   // Burada etkinlikleri getiren API çağrısını gerçekleştirebilirsiniz.
-  //   // Örneğin:
-  //   // return this.http.get<any>(`https://example-api.com/events/${eventId}`);
-  //   // Şu anlık fake bir veriyi döndürelim:
-  //   return of({
-  //     "id": 2,
-  //     "name": "GÜLŞEN",
-  //     "location": "Harbiye",
-  //     "price": "100.00 TL",
-  //     "imageSrc": "assets/images/gulsen.jpg",
-  //     "category": "stand-up",
-  //     "tarih": "2023-02-02"
-  //   });
-  // }
-
   getEventById(eventId: number): Observable<any> {
     // JSON dosyasının yolu
     const url = `assets/products.json`;
@@ -42,4 +33,12 @@ export class FakeApiService {
       map(events => events.find(event => event.id === eventId))
     );
   }
+ 
+    getEventByCity(eventCity: string): Observable<any[]> {
+    const url = 'assets/products.json';
+    return this.http.get<any[]>(url).pipe(
+      map(events => events.filter(event => event.city === eventCity))
+    );
+  }  
+
 }

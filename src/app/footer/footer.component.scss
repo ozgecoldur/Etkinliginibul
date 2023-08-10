@@ -1,10 +1,31 @@
 .footer {
-    background-color: white;
-    color: black;
+    background-color:purple;
+    color: white;
     padding: 20px;
     text-align: center;
   }
   .footer a {
     text-decoration: none;
+    color: white;
+    font-size: 17px;
+
   }
-  
+  /* Ekran genişliği 768 pikselden küçükse (tablet ve mobil cihazlar) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+}
+
+/* Ekran genişliği 576 pikselden küçükse (sadece mobil cihazlar) */
+@media (max-width: 576px) {
+  .footer {
+    padding: 5px;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}

@@ -16,6 +16,7 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1000; 
   }
   
   #navbar {
@@ -54,4 +55,16 @@ body {
       }
     }
   }
+  @media (max-width: 767px) {
+    #header {
+      padding: 15px; /* Daha küçük bir padding */
+      height: 60px; /* Daha küçük bir yükseklik */
+    }
+  
+    li {
+      padding: 0 10px; /* Daha küçük bir padding */
+      margin-top: 10px; /* Daha küçük bir üstten boşluk */
+    }
+  }
+
   

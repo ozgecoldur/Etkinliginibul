@@ -6,39 +6,23 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  title = 'EtkinliginiBul'; // Define the 'title' property here
-
-  slideIndex = 1;
-  ngOnInit() {
-    this.showSlides(this.slideIndex);
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
+  title = 'EtkinliginiBul';
   slides = [
-    { image: 'assets/images/resim3.jpg' },
-    { image: 'assets/images/resim1.png' },
-    { image: 'assets/images/hayal-kahvesi-aqua-florya-61023.jpg' },
+    { image: 'assets/images/doga.webp', link: 'a' },
+    { image: 'assets/images/resim1.png', link: 'b'  },
+    { image: 'assets/images/resim2.png', link: 'c'  }
   ];
-  plusSlides(n: number) {
-    this.showSlides(this.slideIndex += n);
+
+  activeSlideIndex = 0;
+
+  prevSlide() {
+    this.activeSlideIndex = (this.activeSlideIndex - 1 + this.slides.length) % this.slides.length;
   }
 
-  currentSlide(n: number) {
-    this.showSlides(this.slideIndex = n);
+  nextSlide() {
+    this.activeSlideIndex = (this.activeSlideIndex + 1) % this.slides.length;
   }
-
-  showSlides(n: number) {
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { this.slideIndex = 1; }
-    if (n < 1) { this.slideIndex = slides.length; }
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].setAttribute("style", "display: none;");
-    }
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].classList.remove("active");
-    }
-    slides[this.slideIndex - 1].setAttribute("style", "display: block;");
-    dots[this.slideIndex - 1].classList.add("active");
-  }
-
 }
-

@@ -3,124 +3,105 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-.card {
-    border: 1 solid white;
-    border-radius: 40px;
-    padding: 20px;
-    width: 750px;
-    background-color: white;
-    text-align: left;
-    margin-left: 0;
-    margin-top: 50px; /* Kartın üzerinden başlığa kadar boşluk bırakmak için ekledik */
-    height: 450px;
-    
   }
-/* Ürün detayı stil */
-.product-detail {
-    
+  
+  /* Ürün detayı stil */
+  .product-detail {
     display: flex;
     align-items: center;
     margin-bottom: 200px;
+  }
+  .card{
+    margin-left: 50px;
+    margin-top: 80px;
+    border: 0;
 
-
-    img {
-        max-width: 600px;
-        height: auto;
-        margin-left: 100px; 
-        border-radius: 40px;
-        margin-right: 50px;
-        margin-top: 50px;
-
-    }
-}
-
-.product-info {
-    flex: 1; /* Yazıların genişliğini arttırarak resimle hizalamayı sağladık */
-
+  }
+  img {
+    max-width: 600px;
+    height: auto;
+    margin-left: 100px;
+    border-radius: 40px;
+    margin-top: 50px;
+  }
+  .product-info {
+  
     h2 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        margin-left: 20px;
-        margin-bottom: 15px;
-
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
     }
-
+  
     p {
-        font-size: 16px;
-        margin-left: 20px;
-        margin-top: 20px;
-        margin-bottom: 15px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
+      font-size: 16px;
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
-
+  
     .category {
-        display: flex;
-        align-items: center;
-        margin-left: 20px; /* İkon ile metin arasına boşluk bırakmak için */
-        margin-bottom: 15px;
-
-        i {
-            margin-right: 5px; /* İkon ile metin arasına boşluk bırakmak için */
-        }
-
-        p {
-            color: #778899;
-        }
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+  
+      i {
+        margin-right: 5px; /* İkon ile metin arasına boşluk bırakmak için */
+      }
+  
+      p {
+        color: #778899;
+      }
     }
+  
     .location {
-        display: flex;
-        align-items: center;
-        margin-left: 20px; /* İkon ile metin arasına boşluk bırakmak için */
-        margin-top: 20px;
-        margin-bottom: 15px;
-    
-        i {
-            margin-right: 5px; /* İkon ile metin arasına boşluk bırakmak için */
-        }
-    
-        p {
-            color: black;
-        }
-    }
-    .price
-    {
-        
-    display: flex;
-    align-items: center;
-    margin-left: 20px; /* İkon ile metin arasına boşluk bırakmak için */
-    margin-bottom: 15px;
-
-    i {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 15px;
+  
+      i {
         margin-right: 5px; /* İkon ile metin arasına boşluk bırakmak için */
-    }
-
-    p {
+      }
+  
+      p {
         color: black;
+      }
     }
-}
-    .date
-    {
-    display: flex;
-    align-items: center;
-    margin-left: 20px; /* İkon ile metin arasına boşluk bırakmak için */
-    margin-bottom: 15px;
-
-    i {
+  
+    .price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+  
+      i {
         margin-right: 5px; /* İkon ile metin arasına boşluk bırakmak için */
-    }
-
-    p {
+      }
+  
+      p {
         color: black;
+      }
     }
-}
-}
-
-.event-box {
+  
+    .date {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+  
+      i {
+        margin-right: 5px; /* İkon ile metin arasına boşluk bırakmak için */
+      }
+  
+      p {
+        color: black;
+      }
+    }
+  }
+  
+  .event-box {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -130,29 +111,26 @@ body {
     border-radius: 40px;
     background-color: whitesmoke;
     text-align: left;
-    margin-left: 20px;
- 
+  
+    .event-title {
+      font-weight: bold;
+      margin: 0;
+      color: purple;
+      margin: 15px; /* Adjust the top and bottom margins as needed */
+      height: 10px;
+    }
+  
+    .event-detail {
+      margin: 15px;
+      font-size: 15px; /* Yazı boyutunu 16 piksel olarak ayarladık */
+      padding-top: 2px;
+    }
   }
   
-  .event-title {
-    font-weight: bold;
-    margin: 0;
-    color: purple;
-    margin: 10px 0; /* Adjust the top and bottom margins as needed */
-
-  }
-  
-  .event-detail {
-    margin: 0;
-    font-size: 1px; /* Yazı boyutunu 16 piksel olarak ayarladık */
-
-  }
-  
-
-
-.buy{
+  .buy {
     margin-left: 300px;
-}
+  }
+  
   /* Favori ekleme butonu stil */
   .favorite-button,
   .cart-button {
@@ -166,47 +144,12 @@ body {
     cursor: pointer;
     margin-top: 0px;
     margin-left: 40px;
-
+  
+    &:hover {
+      background-color: white;
+      color: purple;
+    }
   }
   
-  .favorite-button:hover,
-  .cart-button:hover {
-    background-color: white;
-    color: purple;
-
-  }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Ekran daraltıldığında düzenleme */
-@media screen and (max-width: 768px) {
-    .product-detail {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .product-detail img {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .product-info h2 {
-        font-size: 20px;
-    }
-
-    .product-info p {
-        font-size: 14px;
-    }
-}
+  
+ 
