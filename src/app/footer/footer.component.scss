@@ -1,31 +1,33 @@
+$color: white;
 .footer {
-    background-color:purple;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: purple;
+  color: $color;
+  padding: 20px;
+  text-align: center;
+  p{
+    font-size: 18px;
   }
-  .footer a {
+  a {
     text-decoration: none;
-    color: white;
+    color: $color;
     font-size: 17px;
+  }
 
+  @media (max-width: 1024px) {
+    p,a {
+      font-size: 16px;
+    }
   }
-  /* Ekran genişliği 768 pikselden küçükse (tablet ve mobil cihazlar) */
-@media (max-width: 768px) {
-  .footer {
-    padding: 10px;
-  }
-  .footer p {
-    font-size: 14px;
-  }
-}
 
-/* Ekran genişliği 576 pikselden küçükse (sadece mobil cihazlar) */
-@media (max-width: 576px) {
-  .footer {
-    padding: 5px;
+  @media (max-width: 768px) {
+    p,a{
+      font-size: 14px;
+    }
   }
-  .footer p {
-    font-size: 12px;
+
+  @media (max-width: 480px) {
+    p,a {
+      font-size: 12px;
+    }
   }
 }

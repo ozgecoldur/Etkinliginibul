@@ -1,4 +1,11 @@
-<nav class="navbar bg-body-tertiary">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
       <form class="d-flex" role="search" >
         <div class="search-box">
@@ -7,9 +14,8 @@
             type="search"
             placeholder="Search"
             aria-label="Search"
-            [(ngModel)]="searchKeyword"
-            (input)="filterEvents()"
-            (keyup.enter)="performSearch()"
+        
+         
             />
             <i
             class="fa-solid fa-magnifying-glass fa-flip-horizontal search-icon"
@@ -106,3 +112,5 @@
       </form>
     </div>
   </nav>
+</body>
+</html>

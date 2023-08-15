@@ -11,13 +11,13 @@ export class ProductListComponent implements OnInit {
   products: any[] = [];
   filteredProducts: any[] = []; 
   showPast: boolean = false; // Yeni ekledik
+  searchKeyword: string = ''; // Kullanıcının girdiği arama kelimesini tutacak değişken
   
   constructor(private fakeApiService: FakeApiService, private router: Router) {}
 
   ngOnInit() {
     this.getProducts();
   }
-
   getProducts() {
     this.fakeApiService.getProducts().subscribe(
       (data) => {
@@ -29,7 +29,7 @@ export class ProductListComponent implements OnInit {
       }
     );
   }
-filterByCategory(category: string) {
+  filterByCategory(category: string) {
     if (category === 'Tümü') {
       this.filteredProducts = this.products;
     } else {
@@ -44,7 +44,6 @@ filterByCategory(category: string) {
     const currentDate = new Date();
     this.filteredProducts = this.products.filter(product => new Date(product.date) < currentDate);
   }
-
   formatDateTimeTurkish(dateTime: string): string {
     const eventDateTime = new Date(dateTime);
     const options: Intl.DateTimeFormatOptions = {
@@ -57,6 +56,11 @@ filterByCategory(category: string) {
     };
     return eventDateTime.toLocaleDateString('tr-TR', options);
   }
-  
+ 
+
+
+
+
+
 }
   

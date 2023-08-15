@@ -1,70 +1,155 @@
-// Genel stil
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+// Genel stiller
+$primary-color: #000;
+$secondary-color: #333;
+$background-color: #f4f4f4;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+a {
+  color: $primary-color;
+}
+
+// Header
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  ul {
+    
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    li a {
+      display: block;
+      padding: 20px 15px; /* Özelleştirilen değer */
+      margin-top: 1rem;
+      color: #1a1a1a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    li a:hover,
+    li a.active {
+      color: purple;
+    }
   }
-  
-  #header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 110px;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    height: 100px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1000; 
+  .logo {
+    display: block;
+    float: left;
+    font-size: 32px; /* Özelleştirilen değer */
+    padding: 10px 20px;
+    text-decoration: none;
   }
-  
-  #navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    li {
-      list-style: none;
-      padding: 0 20px;
+
+  // Menu
+  .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.6s ease-out;
+  }
+
+  // Menu Icon
+  .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+
+    .navicon {
+      background: $secondary-color;
+      display: block;
+      height: 2px;
       position: relative;
-      margin-top: 20px; /* Üstten boşluğu arttırmak için ekleyebilirsiniz */
-  
-      a {
-        text-decoration: none;
-        font-size: 17px;
-        font-weight: 600;
-        color: #1a1a1a;
-        transition: 0.3s ease;
-  
-        &:hover,
-        &.active {
-          color: purple;
-        }
-  
-        &.active::after,
-        &:hover::after {
-          content: "";
-          width: 30%;
-          height: 3px;
-          background: purple;
-          position: absolute;
-          bottom: -4px;
-          left: 20px;
-        }
+      transition: background 0.2s ease-out;
+      width: 24px;
+      margin-top: 1rem;
+      &:before,
+      &:after {
+        background: $secondary-color;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+        max-height: 1000px; /* Büyük bir değer kullanarak tüm seçeneklerin görünür olmasını sağlayın */
+      }
+
+      &:before {
+        top: 5px;
+      }
+
+      &:after {
+        top: -5px;
       }
     }
   }
-  @media (max-width: 767px) {
-    #header {
-      padding: 15px; /* Daha küçük bir padding */
-      height: 60px; /* Daha küçük bir yükseklik */
+
+  // Menu Button
+  .menu-btn {
+    display: none;
+
+    &:checked ~ .menu {
+      max-height: 240px;
     }
-  
-    li {
-      padding: 0 10px; /* Daha küçük bir padding */
-      margin-top: 10px; /* Daha küçük bir üstten boşluk */
+
+    &:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+
+    &:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+
+    &:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+
+    &:checked ~ .menu-icon:not(.steps) .navicon:before,
+    &:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0;
     }
   }
 
+
+  @media (max-width: 1024px) {
+    li {
+      width: 67px;
+      font-size: 8px;
+    }
+    li a {
+      display: block;
+      padding: 0px 0px;
+    }
+  }
+  @media (min-width: 768px) {
+    li {
+      float: left;
+    }
   
+    li a {
+      padding: 20px 30px;
+    }
+    .logo {
+      font-size: 16px; 
+    }
+    .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+  
+    .menu-icon {
+      display: none;
+    }
+    
+  }
+}

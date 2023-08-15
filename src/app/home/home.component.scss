@@ -4,50 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Spartan", sans-serif;
+  font-family: 'Spartan', sans-serif;
 }
-
-
-h1 {
-  font-size: 50px;
-  line-height: 64px;
-  color:#222
-}
-h2 {
-    font-size: 46px;
-    line-height: 54px;
-    color:#222
-}
-h4 {
-    font-size: 20px;
-    color:#222
-}
-h6 {
-  font-size: 12px;
-  font-weight: 700;
-}
-p{
-    font-size: 16px;
-    margin: 15px 0 20px 0;
-    color:#465b52
-}
-
-.section-p1 {
-  padding: 40px 80px;
-}
-.section-m1 {
-  margin: 40px 0;
-}
-body {
-  width: 100%;
-}
-
-
-
-
-
-
-
 /*Slider Start*/
 * {
   box-sizing: border-box;
@@ -57,6 +15,8 @@ body {
 body {
   font-family: Verdana, sans-serif;
   margin: 0;
+  width: 100%;
+
 
 }
 
@@ -67,12 +27,13 @@ body {
 img {
   vertical-align: middle;
   cursor: pointer;
-
+width: 100%;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1600px;
+  width: 100%;
+  max-width: 100%; /* İçeriği ekran genişliğine sığdırmak için */
   position: relative;
   margin: auto;
 }
@@ -137,3 +98,41 @@ img {
 }
 /*Slider End*/
 
+@media (max-width: 1024px) {
+
+  .slideshow-container {
+    max-width: 100%;
+  }
+  
+  .prev,
+  .next {
+    font-size: 16px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  
+  .slideshow-container {
+    width: 100%;
+  }
+  
+  .prev,
+  .next {
+    font-size: 14px;
+  }
+  
+  .dot {
+    height: 8px;
+    width: 8px;
+  }
+  img {
+
+  width: 100%;
+  }
+}

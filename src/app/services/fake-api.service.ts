@@ -34,11 +34,6 @@ export class FakeApiService {
     );
   }
  
-    getEventByCity(eventCity: string): Observable<any[]> {
-    const url = 'assets/products.json';
-    return this.http.get<any[]>(url).pipe(
-      map(events => events.filter(event => event.city === eventCity))
-    );
-  }  
+ 
 
 }

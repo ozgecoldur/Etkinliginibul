@@ -54,7 +54,7 @@
       (click)="onCardClick(product.id)"
     >
       <!-- Add routerLink to navigate to the product detail page with the product ID -->
-      <img [src]="product.imageSrc" alt="" />
+      <img [src]="product.imageSrc[0]" alt="" />
       <div class="des">
         <h4>{{ product.name }}</h4>
         <div class="location">
